@@ -1,0 +1,27 @@
+html {
+    font-size: 62.5%;
+}
+
+
+.nav-bar{
+    display:grid;
+    grid-template: 10vh/ 1fr 1fr 2fr  1fr 1fr;
+    /*grid-template-rows: 150px;   es lo mismo que lo de arriba
+    grid-template-columns: 150px 150px 150px 150 150 150px;*/
+    gap: 10px;
+    
+
+}
+.boton{
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: 100%;
+    height: auto;
+   
+}
