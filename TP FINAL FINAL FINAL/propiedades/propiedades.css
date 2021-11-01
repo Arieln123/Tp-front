@@ -1,0 +1,202 @@
+* {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    list-style: none;
+}
+
+a {
+    color:  #222;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+i {
+    padding: 15px;
+}
+
+a:hover {
+    color: #383838;
+}
+
+body {
+    background: url(fondo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content {
+    display: grid;   
+    grid-row-gap: 1.3rem;
+}
+
+.nav {
+    align-items: center;
+    background-color: rgba(255, 255, 255, .96);
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    padding: 10px 20px;
+    color: #5e5e5e;
+    text-align: left;
+}
+
+.nav-logo {
+    grid-column: 1 / 4;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.nav-inicio {
+    grid-column: 5 / 6;
+
+}
+
+.nav-propiedades {
+    grid-column: 7 / 8;
+}
+.nav-nosotros {
+    grid-column: 9 / 10 ;
+}
+.nav-contacto {
+    grid-column: 11 / -1;
+
+}
+
+
+#nav-toggle, 
+.burger-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1025px) {
+    .burger-menu {
+        display: inline-block;
+        grid-column: 2 / -1;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 0;
+    }
+    .nav-logo {
+        grid-column: 1 / 2;
+    }  
+    .nav-hide {
+        display: none;
+        grid-row-gap: 0;
+    } 
+    li {
+        padding: 5px;
+    }
+    
+    
+    #nav-toggle:checked ~ .nav-hide {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template: auto / 1fr;
+        padding: 10px;
+        height: 50px
+    }
+}
+
+
+
+/*//////////////body///////////////////////////*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+	width: 100%;
+	max-width:90%;
+	margin:auto;
+}
+
+article {
+	background:rgba(24,8,33,.9);
+	padding:20px;
+	margin:20px 0;
+	color:#fff;
+	box-shadow:0 15px 15px 9px rgba(0, 0, 0, 0.25);
+}
+
+article h2 {
+	color:#fff;
+}
+
+
+
+article p {
+	line-height: 50px;
+    font-size: 100%;
+}
+
+article h2, article p, article hr {
+	margin-bottom: 20px;
+}
+
+
+.container2{
+	width: 100%; 
+    height: 430px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;  
+}
+.item{
+	
+	width: 330px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px;
+    margin: 20px;
+    text-align: center;
+	font-size: smaller;
+    background-color:cornflowerblue;
+
+}
+
+.img1{
+	background: url(https://www.inmuebles24.com/noticias/wp-content/uploads/2020/01/departamentos-de-lujo-2-1024x674.jpeg);
+	background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	width:100%;
+	height: 65%;
+	border: 1px solid black;
+}
+.item h4{
+	margin-top: 10px;
+	
+}
+
+.item p{
+	margin-top: 10px;
+}
+.img2{
+	background: url(https://joaquina.com.mx/wp-content/uploads/2021/03/003-Joaquina-Panoramicas-min.jpg);
+	background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	width:100%;
+	height: 65%;
+	border: 1px solid black;
+}
+.img3{
+	background: url(https://q-xx.bstatic.com/xdata/images/hotel/840x460/280258380.jpg?k=f803169fed6f6057191ab3eff396f3c62371611c0520a22418b469991e85021d&o=);
+	background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	width:100%;
+	height: 65%;
+	border: 1px solid black;
+}
